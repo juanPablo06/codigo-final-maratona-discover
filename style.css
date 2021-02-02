@@ -77,11 +77,19 @@ button {
 
 button:hover {
     background: var(--light-green);
+    transition: 1s;
+    transition-delay: 0.5ms;
 }
 
 .button.new {
     display: inline-block;
     margin-bottom: .8rem;
+}
+
+.button.new:hover {
+    color: var(--light-green);
+    transition: .5s;
+    transition-delay: 0.5ms;
 }
 
 .button.cancel {
@@ -100,12 +108,14 @@ button:hover {
 
 .button.cancel:hover {
     opacity: 1;
+    transition: 1s;
+    transition-delay: 0.5ms;
 }
 
 /* Header ===================== */
 header {
-    background: #2D4A22;
-    padding: 2rem 0 10rem;
+    background: #116680;
+    padding: 2rem 0 15rem;
     text-align: center;
 }
 
@@ -116,7 +126,8 @@ header {
 
 /* Balance ===================== */
 #balance {
-    margin-top: -8rem;
+    margin: -7rem -10rem 0 -10rem;
+    
 }
 
 #balance h2 {
@@ -152,7 +163,7 @@ header {
 }
 
 .card.total {
-    background: var(--green);
+    background: #2697AA;
     color: white;
 }
 
@@ -189,11 +200,12 @@ table thead th {
 }
 
 table tbody tr {
-    opacity: 0.7
+    opacity: 0.7;
 }
 
 table tbody tr:hover {
-    opacity: 1
+    opacity: 1;
+    transition: 300ms;
 }
 
 table tbody td {
@@ -294,6 +306,14 @@ footer {
     opacity: 0.6;
 }
 
+footer p {
+    color: #116680;
+}
+
+footer p:hover {
+    color: var(--dark-blue);
+    transition: 300ms;
+}
 
 /* Responsive ===================== */
 @media (min-width: 800px) {
